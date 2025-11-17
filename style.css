@@ -87,3 +87,29 @@ footer {
     color: white;
     margin-top: 40px;
 }
+/* ======== ESTILOS PARA EL NUEVO MENÚ ======== */
+
+/* Para que los saltos del menú no queden ocultos detrás de la barra */
+html {
+    scroll-padding-top: 60px; /* Ajusta esto al alto de tu navbar */
+}
+
+.navbar {
+    background-color: #333;
+    padding: 15px 0;
+    text-align: center;
+    position: sticky; /* ¡La magia! Hace que se pegue arriba */
+    top: 0;
+    z-index: 100; /* Asegura que esté por encima de otros elementos */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none; /* Quita el subrayado */
+    padding: 15px 20px;
+    font-size: 1.1em;
+}
+
+.navbar a:hover {
+    background-color: #555; /* Efecto al pasar el mouse */
+}
