@@ -16,11 +16,17 @@
    ESTILOS GENERALES
    ================================= */
 body {
-    font-family: Arial, sans-serif;
+    /* Aquí aplicamos la fuente de texto normal */
+    font-family: 'Open Sans', sans-serif; 
     margin: 0;
     padding: 0;
     background-color: var(--color-fondo);
     color: var(--color-texto-principal);
+}
+
+/* Nueva regla para que todos los títulos usen la fuente moderna */
+h1, h2, h3, .navbar, .buy-button {
+    font-family: 'Montserrat', sans-serif;
 }
 header {
     background-color: var(--color-primario);
