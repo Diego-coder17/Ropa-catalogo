@@ -2,14 +2,14 @@
    PALETA DE COLORES PRINCIPAL
    ================================= */
 :root {
-  --color-primario: #2c3e50;    /* Un azul naval oscuro (para fondos de header/footer) */
-  --color-primario-hover: #34495e; /* Una versión ligeramente más clara para 'hover' */
-  --color-fondo: #f4f6f6;       /* Un gris muy claro, más suave que el blanco puro */
-  --color-acento: #e74c3c;      /* Un rojo/coral para botones y precios */
-  --color-texto-principal: #333;  /* Texto oscuro (casi negro) */
-  --color-texto-claro: #ffffff;    /* Texto claro (blanco) */
-  --color-bordes: #e0e0e0;      /* Para las tarjetas y separadores */
-  --color-fondo-tarjeta: #ffffff;  /* Fondo de las tarjetas de producto (blanco) */
+  --color-primario: #004D40;    /* Verde bosque oscuro */
+  --color-primario-hover: #00695C;
+  --color-fondo: #fdf8f0;       /* Fondo crema/beige suave */
+  --color-acento: #E67E22;      /* Naranja/Terracota */
+  --color-texto-principal: #333;
+  --color-texto-claro: #ffffff;
+  --color-bordes: #e0e0e0;
+  --color-fondo-tarjeta: #ffffff;
 }
 
 /* =================================
