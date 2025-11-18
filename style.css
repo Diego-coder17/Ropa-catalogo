@@ -2,15 +2,16 @@
    PALETA DE COLORES "Agua y Acero"
    ================================= */
 :root {
-  --color-primario: #34495e;    /* Azul acero oscuro (para header/footer) */
-  --color-primario-hover: #4e6a85; /* Versión más clara del azul acero */
-  --color-fondo: #f0f4f8;       /* Un gris azulado muy claro para el fondo */
-  --color-acento: #00acc1;      /* Aqua/Cian brillante (para precios y botones) */
-  --color-texto-principal: #222;  /* Texto oscuro */
-  --color-texto-claro: #ffffff;    /* Texto claro (blanco) */
-  --color-bordes: #dce4ec;      /* Bordes en tono con el fondo */
-  --color-fondo-tarjeta: #ffffff;  /* Fondo de las tarjetas (blanco) */
+  --color-primario: #34495e;    /* Azul acero oscuro */
+  --color-primario-hover: #4e6a85;
+  --color-fondo: #f0f4f8;       /* Gris azulado muy claro */
+  --color-acento: #00acc1;      /* Aqua/Cian brillante */
+  --color-texto-principal: #222;
+  --color-texto-claro: #ffffff;
+  --color-bordes: #dce4ec;
+  --color-fondo-tarjeta: #ffffff;
 }
+
 /* =================================
    ESTILOS GENERALES
    ================================= */
@@ -21,24 +22,18 @@ body {
     background-color: var(--color-fondo);
     color: var(--color-texto-principal);
 }
-
 header {
     background-color: var(--color-primario);
     color: var(--color-texto-claro);
     text-align: center;
     padding: 20px 0;
 }
-
-header h1 {
-    margin: 0;
-}
-
+header h1 { margin: 0; }
 main {
     max-width: 1200px;
     margin: 20px auto;
     padding: 0 20px;
 }
-
 footer {
     text-align: center;
     padding: 20px;
@@ -50,103 +45,82 @@ footer {
 /* =================================
    MENÚ DE NAVEGACIÓN
    ================================= */
-
-/* Para que los saltos del menú no queden ocultos detrás de la barra */
 html {
-    scroll-padding-top: 60px; /* Ajusta esto si el alto de tu navbar cambia */
+    scroll-padding-top: 60px;
 }
-
 .navbar {
     background-color: var(--color-primario);
     padding: 15px 0;
     text-align: center;
-    position: sticky; /* Hace que se pegue arriba */
+    position: sticky;
     top: 0;
-    z-index: 100; /* Asegura que esté por encima */
+    z-index: 100;
 }
-
 .navbar a {
     color: var(--color-texto-claro);
-    text-decoration: none; /* Quita el subrayado */
+    text-decoration: none;
     padding: 15px 20px;
     font-size: 1.1em;
 }
-
 .navbar a:hover {
-    background-color: var(--color-primario-hover); /* Efecto al pasar el mouse */
+    background-color: var(--color-primario-hover);
 }
 
 /* =================================
    CATÁLOGO (PÁGINA PRINCIPAL)
    ================================= */
-
-/* Estilos de las Secciones */
 .category h2 {
     font-size: 2em;
     border-bottom: 2px solid var(--color-bordes);
     padding-bottom: 10px;
     margin-top: 40px;
 }
-
-/* Rejilla de Productos */
 .product-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* Espacio entre las tarjetas */
+    gap: 20px;
     justify-content: flex-start;
 }
-
-/* Para quitar el subrayado azul de las tarjetas enlazadas */
 .product-link {
     text-decoration: none;
-    color: inherit; /* Hereda el color del texto normal */
+    color: inherit;
 }
-
-/* Tarjeta de Producto Individual */
 .product-card {
     background-color: var(--color-fondo-tarjeta);
     border: 1px solid var(--color-bordes);
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    overflow: hidden; /* Asegura que la imagen no se salga */
-    width: 280px; /* Ancho fijo para cada tarjeta */
+    overflow: hidden;
+    width: 280px;
     transition: transform 0.2s;
 }
-
 .product-card:hover {
-    transform: translateY(-5px); /* Efecto al pasar el mouse */
+    transform: translateY(-5px);
 }
-
 .product-card img {
     width: 100%;
-    height: 300px; /* Alto fijo para las imágenes */
-    object-fit: cover; /* Asegura que la imagen cubra el espacio sin deformarse */
+    height: 300px;
+    object-fit: cover;
 }
-
 .product-card h3 {
     font-size: 1.2em;
     margin: 15px;
 }
-
 .product-card .sizes {
     margin: 0 15px;
     font-style: italic;
     color: #555;
 }
-
 .product-card .price {
     margin: 15px;
     font-size: 1.1em;
     font-weight: bold;
-    color: var(--color-acento); /* Color de acento aplicado */
+    color: var(--color-acento);
 }
 
-
 /* =================================
-   PÁGINA DE DETALLE DE PRODUCTO
+   PÁGINA DE DETALLE (CON GALERÍA NUEVA)
    ================================= */
-
-/* Enlace para volver */
 .back-link {
     display: inline-block;
     margin: 20px 0;
@@ -155,57 +129,69 @@ html {
     color: var(--color-primario);
     font-weight: bold;
 }
-.back-link:hover {
-    text-decoration: underline;
-}
+.back-link:hover { text-decoration: underline; }
 
-/* Contenedor principal de la página de detalle */
-.product-detail {
-    display: flex; /* Pone la galería y la info uno al lado del otro */
-    flex-wrap: wrap; /* Si no caben, se pone uno debajo del otro */
-    gap: 30px;
+/* Layout de la página de detalle */
+.product-detail-layout {
+    display: flex;
+    flex-wrap: wrap; /* En móviles se pone uno debajo de otro */
+    gap: 40px;
     background-color: var(--color-fondo-tarjeta);
     padding: 20px;
     border-radius: 8px;
 }
 
-/* Galería de fotos */
-.detail-gallery {
-    flex: 1; /* Ocupa la mitad del espacio */
+/* (NUEVO) Galería de fotos */
+.product-gallery {
+    flex: 1.2; /* Le da un poco más de espacio a la galería */
     min-width: 300px;
 }
-.detail-gallery img {
+.gallery-main-image img {
     width: 100%;
     border-radius: 8px;
     border: 1px solid var(--color-bordes);
-    margin-bottom: 10px; 
+    height: auto;
+}
+.gallery-thumbnails {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap; /* Si son muchas, bajan a la siguiente línea */
+}
+.gallery-thumbnails img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 2px solid var(--color-bordes);
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+.gallery-thumbnails img:hover {
+    border-color: var(--color-acento);
 }
 
-/* Información del producto */
-.detail-info {
-    flex: 1; /* Ocupa la otra mitad */
+/* (NUEVO) Info del producto */
+.product-info {
+    flex: 1; /* Ocupa el espacio restante */
     min-width: 300px;
 }
-
-.detail-info h2 {
+.product-info h2 { /* Nombre del producto */
     font-size: 2.5em;
     margin-top: 0;
 }
-
 .price-detail {
     font-size: 2em;
     font-weight: bold;
-    color: var(--color-acento); /* Color de acento aplicado */
+    color: var(--color-acento);
     margin-bottom: 20px;
 }
-
 .sizes-detail {
     font-size: 1.2em;
     font-style: italic;
 }
-
 .buy-button {
-    background-color: var(--color-acento); /* Color de acento aplicado */
+    background-color: var(--color-acento);
     color: var(--color-texto-claro);
     font-size: 1.2em;
     font-weight: bold;
@@ -216,5 +202,5 @@ html {
     margin-top: 20px;
 }
 .buy-button:hover {
-    background-color: var(--color-primario-hover); /* Usamos el hover del primario */
+    background-color: var(--color-primario-hover);
 }
