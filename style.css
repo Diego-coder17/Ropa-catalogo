@@ -43,29 +43,109 @@ footer {
 }
 
 /* =================================
-   MENÚ DE NAVEGACIÓN
+   MENÚ DE NAVEGACIÓN (RESPONSIVO)
    ================================= */
 html {
-    scroll-padding-top: 60px;
+    scroll-padding-top: 70px;
 }
+
 .navbar {
     background-color: var(--color-primario);
-    padding: 15px 0;
-    text-align: center;
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
-.navbar a {
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between; /* Separa logo y enlaces */
+    align-items: center;
+}
+
+.nav-logo {
+    color: var(--color-texto-claro);
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Estilos de los enlaces en Escritorio */
+.nav-links a {
     color: var(--color-texto-claro);
     text-decoration: none;
-    padding: 15px 20px;
-    font-size: 1.1em;
+    padding: 10px 15px;
+    font-size: 1em;
+    margin-left: 10px;
+    border-radius: 4px;
+    transition: background 0.3s;
 }
-.navbar a:hover {
+
+.nav-links a:hover {
     background-color: var(--color-primario-hover);
 }
 
+/* Botones del menú móvil (ocultos en escritorio) */
+.hamburger, .close-btn {
+    display: none; /* Por defecto no se ven */
+    background: none;
+    border: none;
+    color: var(--color-texto-claro);
+    font-size: 1.8em;
+    cursor: pointer;
+}
+
+/* =================================
+   VERSIÓN MÓVIL (Media Query)
+   Cuando la pantalla sea menor a 768px (tablets y celulares)
+   ================================= */
+@media (max-width: 768px) {
+
+    /* Mostrar el botón de hamburguesa */
+    .hamburger {
+        display: block;
+    }
+
+    /* El contenedor de enlaces se convierte en menú lateral */
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%; /* Escondido a la derecha fuera de la pantalla */
+        height: 100vh; /* Alto completo */
+        width: 250px;  /* Ancho del menú lateral */
+        background-color: var(--color-primario); /* Mismo color que el header */
+        flex-direction: column;
+        padding-top: 60px;
+        box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+        transition: right 0.3s ease; /* Animación suave al entrar */
+        display: flex;
+        align-items: center; /* Centra los textos */
+    }
+
+    /* Clase activa para mostrar el menú */
+    .nav-links.active {
+        right: 0; /* Lo trae a la pantalla */
+    }
+
+    /* Estilo de los enlaces dentro del menú móvil */
+    .nav-links a {
+        margin: 10px 0;
+        width: 80%; /* Botones anchos */
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+    /* Botón de cerrar (X) */
+    .close-btn {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+}
 /* =================================
    CATÁLOGO (PÁGINA PRINCIPAL)
    ================================= */
