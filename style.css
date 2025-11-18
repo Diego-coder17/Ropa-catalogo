@@ -1,17 +1,16 @@
 /* =================================
-   PALETA DE COLORES PRINCIPAL
+   PALETA DE COLORES "Agua y Acero"
    ================================= */
 :root {
-  --color-primario: #004D40;    /* Verde bosque oscuro */
-  --color-primario-hover: #00695C;
-  --color-fondo: #fdf8f0;       /* Fondo crema/beige suave */
-  --color-acento: #E67E22;      /* Naranja/Terracota */
-  --color-texto-principal: #333;
-  --color-texto-claro: #ffffff;
-  --color-bordes: #e0e0e0;
-  --color-fondo-tarjeta: #ffffff;
+  --color-primario: #34495e;    /* Azul acero oscuro (para header/footer) */
+  --color-primario-hover: #4e6a85; /* Versión más clara del azul acero */
+  --color-fondo: #f0f4f8;       /* Un gris azulado muy claro para el fondo */
+  --color-acento: #00acc1;      /* Aqua/Cian brillante (para precios y botones) */
+  --color-texto-principal: #222;  /* Texto oscuro */
+  --color-texto-claro: #ffffff;    /* Texto claro (blanco) */
+  --color-bordes: #dce4ec;      /* Bordes en tono con el fondo */
+  --color-fondo-tarjeta: #ffffff;  /* Fondo de las tarjetas (blanco) */
 }
-
 /* =================================
    ESTILOS GENERALES
    ================================= */
