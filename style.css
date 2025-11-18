@@ -275,20 +275,26 @@ html {
 .sizes-detail {
     font-size: 1.2em;
     font-style: italic;
-}
 .buy-button {
+    display: inline-block; /* IMPORTANTE: Para que respete el tamaño */
+    text-decoration: none; /* IMPORTANTE: Quita el subrayado del enlace */
+    text-align: center;
+    
     background-color: var(--color-acento);
     color: var(--color-texto-claro);
     font-size: 1.2em;
     font-weight: bold;
     border: none;
     padding: 15px 30px;
-    border-radius: 5px;
+    border-radius: 30px; /* Bordes redondeados modernos */
     cursor: pointer;
     margin-top: 20px;
+    transition: background 0.3s, transform 0.2s;
 }
+
 .buy-button:hover {
     background-color: var(--color-primario-hover);
+    transform: translateY(-3px); /* Pequeño salto al pasar el mouse */
 }
 /* =================================
    ESTILOS DE LA PORTADA (HERO)
