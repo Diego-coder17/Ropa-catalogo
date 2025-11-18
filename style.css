@@ -1,15 +1,29 @@
+/* =================================
+   PALETA DE COLORES PRINCIPAL
+   ================================= */
+:root {
+  --color-primario: #2c3e50;    /* Un azul naval oscuro (para fondos de header/footer) */
+  --color-primario-hover: #34495e; /* Una versión ligeramente más clara para 'hover' */
+  --color-fondo: #f4f6f6;       /* Un gris muy claro, más suave que el blanco puro */
+  --color-acento: #e74c3c;      /* Un rojo/coral para botones y precios */
+  --color-texto-principal: #333;  /* Texto oscuro (casi negro) */
+  --color-texto-claro: #ffffff;    /* Texto claro (blanco) */
+  --color-bordes: #e0e0e0;      /* Para las tarjetas y separadores */
+  --color-fondo-tarjeta: #ffffff;  /* Fondo de las tarjetas de producto (blanco) */
+}
 /* Estilos Generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: var(--color-fondo); /* Aplicado */
+    color: var(--color-texto-principal); /* Aplicado */
 }
 
 header {
-    background-color: #222;
-    color: white;
+    background-color: var(--color-primario); /* Aplicado */
+    color: var(--color-texto-claro); /* Aplicado */
+    /* ...el resto... */
     text-align: center;
     padding: 20px 0;
 }
@@ -41,9 +55,11 @@ main {
 }
 
 /* Tarjeta de Producto Individual */
+/* Tarjeta de Producto Individual */
 .product-card {
-    background-color: white;
-    border: 1px solid #ddd;
+    background-color: var(--color-fondo-tarjeta); /* Aplicado */
+    border: 1px solid var(--color-bordes); /* Aplicado */
+    /* ...el resto... */
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden; /* Asegura que la imagen no se salga */
@@ -76,15 +92,15 @@ main {
     margin: 15px;
     font-size: 1.1em;
     font-weight: bold;
-    color: #007bff;
+    color: var(--color-acento); /* Aplicado */
 }
 
 /* Pie de página */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #222;
-    color: white;
+background-color: var(--color-primario); /* Aplicado */
+    color: var(--color-texto-claro); /* Aplicado */
     margin-top: 40px;
 }
 /* ======== ESTILOS PARA EL NUEVO MENÚ ======== */
@@ -95,7 +111,8 @@ html {
 }
 
 .navbar {
-    background-color: #333;
+    background-color: var(--color-primario); /* Aplicado */
+    /* ...el resto... */
     padding: 15px 0;
     text-align: center;
     position: sticky; /* ¡La magia! Hace que se pegue arriba */
@@ -111,7 +128,7 @@ html {
 }
 
 .navbar a:hover {
-    background-color: #555; /* Efecto al pasar el mouse */
+    background-color: var(--color-primario-hover); /* Aplicado */
 }
 /* ======== ESTILOS PARA PÁGINA DE DETALLE ======== */
 
@@ -127,7 +144,7 @@ html {
     margin: 20px 0;
     font-size: 1.1em;
     text-decoration: none;
-    color: #007bff;
+color: var(--color-primario); /* Aplicado */
     font-weight: bold;
 }
 .back-link:hover {
@@ -139,7 +156,7 @@ html {
     display: flex; /* Pone la galería y la info uno al lado del otro */
     flex-wrap: wrap; /* Si no caben, se pone uno debajo del otro */
     gap: 30px;
-    background-color: white;
+background-color: var(--color-fondo-tarjeta); /* Aplicado */
     padding: 20px;
     border-radius: 8px;
 }
@@ -152,7 +169,7 @@ html {
 .detail-gallery img {
     width: 100%;
     border-radius: 8px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--color-bordes); /* Aplicado */
     /* Si pones más de una foto, añade un margen */
     margin-bottom: 10px; 
 }
@@ -171,7 +188,7 @@ html {
 .price-detail {
     font-size: 2em;
     font-weight: bold;
-    color: #007bff;
+    color: var(--color-acento); /* Aplicado */
     margin-bottom: 20px;
 }
 
@@ -181,8 +198,8 @@ html {
 }
 
 .buy-button {
-    background-color: #28a745;
-    color: white;
+background-color: var(--color-acento); /* Aplicado */
+    color: var(--color-texto-claro); /* Aplicado */
     font-size: 1.2em;
     font-weight: bold;
     border: none;
@@ -192,5 +209,5 @@ html {
     margin-top: 20px;
 }
 .buy-button:hover {
-    background-color: #218838;
+background-color: var(--color-primario); /* Aplicado */
 }
