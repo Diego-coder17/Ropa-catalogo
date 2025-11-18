@@ -11,19 +11,21 @@
   --color-bordes: #e0e0e0;      /* Para las tarjetas y separadores */
   --color-fondo-tarjeta: #ffffff;  /* Fondo de las tarjetas de producto (blanco) */
 }
-/* Estilos Generales */
+
+/* =================================
+   ESTILOS GENERALES
+   ================================= */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: var(--color-fondo); /* Aplicado */
-    color: var(--color-texto-principal); /* Aplicado */
+    background-color: var(--color-fondo);
+    color: var(--color-texto-principal);
 }
 
 header {
-    background-color: var(--color-primario); /* Aplicado */
-    color: var(--color-texto-claro); /* Aplicado */
-    /* ...el resto... */
+    background-color: var(--color-primario);
+    color: var(--color-texto-claro);
     text-align: center;
     padding: 20px 0;
 }
@@ -38,10 +40,51 @@ main {
     padding: 0 20px;
 }
 
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--color-primario);
+    color: var(--color-texto-claro);
+    margin-top: 40px;
+}
+
+/* =================================
+   MENÚ DE NAVEGACIÓN
+   ================================= */
+
+/* Para que los saltos del menú no queden ocultos detrás de la barra */
+html {
+    scroll-padding-top: 60px; /* Ajusta esto si el alto de tu navbar cambia */
+}
+
+.navbar {
+    background-color: var(--color-primario);
+    padding: 15px 0;
+    text-align: center;
+    position: sticky; /* Hace que se pegue arriba */
+    top: 0;
+    z-index: 100; /* Asegura que esté por encima */
+}
+
+.navbar a {
+    color: var(--color-texto-claro);
+    text-decoration: none; /* Quita el subrayado */
+    padding: 15px 20px;
+    font-size: 1.1em;
+}
+
+.navbar a:hover {
+    background-color: var(--color-primario-hover); /* Efecto al pasar el mouse */
+}
+
+/* =================================
+   CATÁLOGO (PÁGINA PRINCIPAL)
+   ================================= */
+
 /* Estilos de las Secciones */
 .category h2 {
     font-size: 2em;
-    border-bottom: 2px solid #ccc;
+    border-bottom: 2px solid var(--color-bordes);
     padding-bottom: 10px;
     margin-top: 40px;
 }
@@ -54,12 +97,16 @@ main {
     justify-content: flex-start;
 }
 
-/* Tarjeta de Producto Individual */
+/* Para quitar el subrayado azul de las tarjetas enlazadas */
+.product-link {
+    text-decoration: none;
+    color: inherit; /* Hereda el color del texto normal */
+}
+
 /* Tarjeta de Producto Individual */
 .product-card {
-    background-color: var(--color-fondo-tarjeta); /* Aplicado */
-    border: 1px solid var(--color-bordes); /* Aplicado */
-    /* ...el resto... */
+    background-color: var(--color-fondo-tarjeta);
+    border: 1px solid var(--color-bordes);
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden; /* Asegura que la imagen no se salga */
@@ -92,51 +139,13 @@ main {
     margin: 15px;
     font-size: 1.1em;
     font-weight: bold;
-    color: var(--color-acento); /* Aplicado */
+    color: var(--color-acento); /* Color de acento aplicado */
 }
 
-/* Pie de página */
-footer {
-    text-align: center;
-    padding: 20px;
-background-color: var(--color-primario); /* Aplicado */
-    color: var(--color-texto-claro); /* Aplicado */
-    margin-top: 40px;
-}
-/* ======== ESTILOS PARA EL NUEVO MENÚ ======== */
 
-/* Para que los saltos del menú no queden ocultos detrás de la barra */
-html {
-    scroll-padding-top: 60px; /* Ajusta esto al alto de tu navbar */
-}
-
-.navbar {
-    background-color: var(--color-primario); /* Aplicado */
-    /* ...el resto... */
-    padding: 15px 0;
-    text-align: center;
-    position: sticky; /* ¡La magia! Hace que se pegue arriba */
-    top: 0;
-    z-index: 100; /* Asegura que esté por encima de otros elementos */
-}
-
-.navbar a {
-    color: white;
-    text-decoration: none; /* Quita el subrayado */
-    padding: 15px 20px;
-    font-size: 1.1em;
-}
-
-.navbar a:hover {
-    background-color: var(--color-primario-hover); /* Aplicado */
-}
-/* ======== ESTILOS PARA PÁGINA DE DETALLE ======== */
-
-/* Para quitar el subrayado azul de las tarjetas en el index */
-.product-link {
-    text-decoration: none;
-    color: inherit; /* Hereda el color del texto normal */
-}
+/* =================================
+   PÁGINA DE DETALLE DE PRODUCTO
+   ================================= */
 
 /* Enlace para volver */
 .back-link {
@@ -144,7 +153,7 @@ html {
     margin: 20px 0;
     font-size: 1.1em;
     text-decoration: none;
-color: var(--color-primario); /* Aplicado */
+    color: var(--color-primario);
     font-weight: bold;
 }
 .back-link:hover {
@@ -156,7 +165,7 @@ color: var(--color-primario); /* Aplicado */
     display: flex; /* Pone la galería y la info uno al lado del otro */
     flex-wrap: wrap; /* Si no caben, se pone uno debajo del otro */
     gap: 30px;
-background-color: var(--color-fondo-tarjeta); /* Aplicado */
+    background-color: var(--color-fondo-tarjeta);
     padding: 20px;
     border-radius: 8px;
 }
@@ -169,8 +178,7 @@ background-color: var(--color-fondo-tarjeta); /* Aplicado */
 .detail-gallery img {
     width: 100%;
     border-radius: 8px;
-    border: 1px solid var(--color-bordes); /* Aplicado */
-    /* Si pones más de una foto, añade un margen */
+    border: 1px solid var(--color-bordes);
     margin-bottom: 10px; 
 }
 
@@ -188,7 +196,7 @@ background-color: var(--color-fondo-tarjeta); /* Aplicado */
 .price-detail {
     font-size: 2em;
     font-weight: bold;
-    color: var(--color-acento); /* Aplicado */
+    color: var(--color-acento); /* Color de acento aplicado */
     margin-bottom: 20px;
 }
 
@@ -198,8 +206,8 @@ background-color: var(--color-fondo-tarjeta); /* Aplicado */
 }
 
 .buy-button {
-background-color: var(--color-acento); /* Aplicado */
-    color: var(--color-texto-claro); /* Aplicado */
+    background-color: var(--color-acento); /* Color de acento aplicado */
+    color: var(--color-texto-claro);
     font-size: 1.2em;
     font-weight: bold;
     border: none;
@@ -209,5 +217,5 @@ background-color: var(--color-acento); /* Aplicado */
     margin-top: 20px;
 }
 .buy-button:hover {
-background-color: var(--color-primario); /* Aplicado */
+    background-color: var(--color-primario-hover); /* Usamos el hover del primario */
 }
