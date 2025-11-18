@@ -12,11 +12,23 @@
         <h1>Catálogo de Ropa 2025</h1>
     </header>
 
-    <nav class="navbar">
-        <a href="#playeras">Playeras</a>
-        <a href="#pantalones">Pantalones</a>
-        <a href="#chamarras">Chamarras</a>
-        <a href="#sueteres">Sueteres</a>        
+<nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Mi Catálogo</div>
+
+            <button class="hamburger" id="hamburger-btn">
+                ☰
+            </button>
+
+            <div class="nav-links" id="nav-links">
+                <button class="close-btn" id="close-btn">×</button>
+                
+                <a href="#playeras" onclick="closeMenu()">Playeras</a>
+                <a href="#pantalones" onclick="closeMenu()">Pantalones</a>
+                <a href="#chamarras" onclick="closeMenu()">Chamarras</a>
+                <a href="#sueteres" onclick="closeMenu()">Suéteres</a>
+            </div>
+        </div>
     </nav>
     <main>
         <section id="playeras" class="category">
@@ -105,6 +117,25 @@
     <footer>
         <p>© Catalogo 2025 </p>
     </footer>
+<script>
+        const hamburger = document.getElementById('hamburger-btn');
+        const navLinks = document.getElementById('nav-links');
+        const closeBtn = document.getElementById('close-btn');
 
+        // Abrir menú
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.add('active');
+        });
+
+        // Cerrar menú con la X
+        closeBtn.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+        });
+
+        // Cerrar menú al elegir una categoría
+        function closeMenu() {
+            navLinks.classList.remove('active');
+        }
+    </script>
 </body>
 </html>
