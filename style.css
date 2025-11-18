@@ -275,6 +275,7 @@ html {
 .sizes-detail {
     font-size: 1.2em;
     font-style: italic;
+}
 .buy-button {
     display: inline-block; /* IMPORTANTE: Para que respete el tamaño */
     text-decoration: none; /* IMPORTANTE: Quita el subrayado del enlace */
