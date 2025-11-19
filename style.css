@@ -1,17 +1,18 @@
 /* =================================
-   PALETA "COBALTO ELÉCTRICO"
+   PALETA "ZAFIRO REAL"
    ================================= */
 :root {
-  --color-primario: #0B0C10;    /* Negro azulado profundo */
-  --color-primario-hover: #1F2833;
-  --color-fondo: #F4F7F6;       /* Gris azulado muy pálido */
-  --color-acento: #2962FF;      /* Azul Royal Brillante (High Energy) */
-  --color-texto-principal: #1A1A1D;
-  --color-texto-claro: #ffffff;
-  --color-bordes: #C5C6C7;
-  --color-fondo-tarjeta: #ffffff;
+  --color-primario: #0a1128;    /* Azul Noche casi negro */
+  --color-primario-hover: #1c2a48;
+  --color-fondo: #0F1C2E;       /* FONDO PRINCIPAL: Azul Marino Profundo */
+  --color-fondo-tarjeta: #1E3A5F; /* TARJETAS: Azul Zafiro más claro */
+  
+  --color-acento: #BF9B30;      /* Oro Viejo / Mostaza (Induce lujo) */
+  
+  --color-texto-principal: #ffffff; /* Texto blanco obligado por el fondo oscuro */
+  --color-texto-claro: #aabbd1; /* Azul grisáceo para textos secundarios */
+  --color-bordes: #2c4a70;
 }
-
 /* =================================
    ESTILOS GENERALES
    ================================= */
