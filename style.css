@@ -1,17 +1,17 @@
 /* =================================
-   PALETA "ZAFIRO REAL"
+   PALETA "TOSCANA DE LUJO"
    ================================= */
 :root {
-  --color-primario: #0a1128;    /* Azul Noche casi negro */
-  --color-primario-hover: #1c2a48;
-  --color-fondo: #0F1C2E;       /* FONDO PRINCIPAL: Azul Marino Profundo */
-  --color-fondo-tarjeta: #1E3A5F; /* TARJETAS: Azul Zafiro más claro */
+  --color-primario: #2b1d1a;    /* Café Espresso */
+  --color-primario-hover: #4a3b38;
+  --color-fondo: #D6CCC2;       /* FONDO PRINCIPAL: Beige Piedra (Cálido) */
+  --color-fondo-tarjeta: #FFFFFF; /* TARJETAS: Blancas para resaltar el producto */
   
-  --color-acento: #BF9B30;      /* Oro Viejo / Mostaza (Induce lujo) */
+  --color-acento: #720E1E;      /* Rojo Vino / Burdeos (Muy elegante) */
   
-  --color-texto-principal: #ffffff; /* Texto blanco obligado por el fondo oscuro */
-  --color-texto-claro: #aabbd1; /* Azul grisáceo para textos secundarios */
-  --color-bordes: #2c4a70;
+  --color-texto-principal: #2b1d1a;
+  --color-texto-claro: #ffffff;
+  --color-bordes: #C7BCA5;
 }
 /* =================================
    ESTILOS GENERALES
