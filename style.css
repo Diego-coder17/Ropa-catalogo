@@ -401,3 +401,8 @@ html {
 .hidden {
     display: none !important;
 }
+/* Asegura que las secciones se puedan ocultar/mostrar con el JS */
+.category {
+    transition: opacity 0.3s ease; /* Transición suave para el cambio */
+    /* El display: block se maneja desde el JavaScript */
+}
