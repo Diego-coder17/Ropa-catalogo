@@ -37,6 +37,13 @@
             </div>
         </div>
     </nav>
+    <div class="filter-bar">
+        <button onclick="filterProducts(this, 'ALL')" class="active">Mostrar Todo</button>
+        <button onclick="filterProducts(this, 'S')">Talla S</button>
+        <button onclick="filterProducts(this, 'M')">Talla M</button>
+        <button onclick="filterProducts(this, 'L')">Talla L</button>
+        <button onclick="filterProducts(this, 'XL')">Talla XL</button>
+    </div>
     <main>
         <section id="playeras" class="category">
             <h2>Playeras</h2>
@@ -98,7 +105,7 @@
          <section id="sueteres" class="category">
             <h2>Sueteres</h2>
             <div class="product-grid">
-</a> <a href="sueter-nav.html" class="product-link">
+</a> <a href="sueter-nav.html" class="product-link" data-sizes="S">
                     <div class="product-card">
                         <img src="images/IMG_6078.JPEG" alt="Sueter Navideño">
                         <h3>Sueter Navideño</h3>
@@ -108,7 +115,7 @@
                 </a> 
 
 <div class="product-grid">
-</a> <a href="sueter-verde.html" class="product-link">
+</a> <a href="sueter-verde.html" class="product-link "data-sizes="L">
                     <div class="product-card">
                         <img src="images/IMG_6083.JPEG" alt="Sueter Verde Tejido">
                         <h3>Sueter Verde Tejido</h3>
