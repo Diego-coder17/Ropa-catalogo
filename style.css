@@ -1,14 +1,14 @@
 /* =================================
-   PALETA "MOCHA & CLAY"
+   PALETA "COBALTO ELÉCTRICO"
    ================================= */
 :root {
-  --color-primario: #3E2723;    /* Café muy oscuro (casi negro) */
-  --color-primario-hover: #4E342E;
-  --color-fondo: #FDFBF7;       /* Blanco hueso / Alabastro */
-  --color-acento: #D35400;      /* Naranja quemado / Arcilla (Invita a tocar) */
-  --color-texto-principal: #2C2C2C;
+  --color-primario: #0B0C10;    /* Negro azulado profundo */
+  --color-primario-hover: #1F2833;
+  --color-fondo: #F4F7F6;       /* Gris azulado muy pálido */
+  --color-acento: #2962FF;      /* Azul Royal Brillante (High Energy) */
+  --color-texto-principal: #1A1A1D;
   --color-texto-claro: #ffffff;
-  --color-bordes: #EAECEE;
+  --color-bordes: #C5C6C7;
   --color-fondo-tarjeta: #ffffff;
 }
 
