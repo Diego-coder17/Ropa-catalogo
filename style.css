@@ -2,13 +2,13 @@
    PALETA DE COLORES "Agua y Acero"
    ================================= */
 :root {
-  --color-primario: #34495e;    /* Azul acero oscuro */
-  --color-primario-hover: #4e6a85;
-  --color-fondo: #f0f4f8;       /* Gris azulado muy claro */
-  --color-acento: #00acc1;      /* Aqua/Cian brillante */
-  --color-texto-principal: #222;
+  --color-primario: #1A1A1A;    /* Negro Intenso */
+  --color-primario-hover: #333333;
+  --color-fondo: #F5F5DC;       /* Crema muy suave */
+  --color-acento: #C0A23F;      /* Dorado (el más potente) */
+  --color-texto-principal: #1A1A1A;
   --color-texto-claro: #ffffff;
-  --color-bordes: #dce4ec;
+  --color-bordes: #dddddd;
   --color-fondo-tarjeta: #ffffff;
 }
 
