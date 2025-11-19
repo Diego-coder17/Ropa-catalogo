@@ -49,7 +49,7 @@
             <h2>Playeras</h2>
             <div class="product-grid">
                 
-                <a href="playera-roja.html" class="product-link">
+                <a href="playera-roja.html" class="product-link" data-sizes="S,M,L,XL">
                     <div class="product-card">
                         <img src="images/playera1.jpg" alt="Playera Roja">
                         <h3>Playera Básica Roja</h3>
@@ -58,12 +58,14 @@
                     </div>
                 </a>
 
-                <div class="product-card">
-                    <img src="images/playera2.jpg" alt="Playera Estampada">
-                    <h3>Playera Estampada Negra</h3>
-                    <p class="sizes">Tallas: M, L</p>
-                    <p class="price">$300.00 MXN</p>
-                </div>
+                <a href="playera-negra.html" class="product-link" data-sizes="M,L">
+                    <div class="product-card">
+                        <img src="images/playera2.jpg" alt="Playera Estampada">
+                        <h3>Playera Estampada Negra</h3>
+                        <p class="sizes">Tallas: M, L</p>
+                        <p class="price">$300.00 MXN</p>
+                    </div>
+                </a>
 
             </div>
         </section>
@@ -72,19 +74,23 @@
             <h2>Pantalones</h2>
             <div class="product-grid">
                 
-                <div class="product-card">
-                    <img src="images/pantalon1.jpg" alt="Jeans Azules">
-                    <h3>Jeans Azules (Slim Fit)</h3>
-                    <p class="sizes">Tallas: 30, 32, 34</p>
-                    <p class="price">$550.00 MXN</p>
-                </div>
+                <a href="pantalon-azul.html" class="product-link" data-sizes="30,32,34">
+                    <div class="product-card">
+                        <img src="images/pantalon1.jpg" alt="Jeans Azules">
+                        <h3>Jeans Azules (Slim Fit)</h3>
+                        <p class="sizes">Tallas: 30, 32, 34</p>
+                        <p class="price">$550.00 MXN</p>
+                    </div>
+                </a>
 
-                <div class="product-card">
-                    <img src="images/pantalon2.jpg" alt="Pants Grises">
-                    <h3>Pants Deportivos Grises</h3>
-                    <p class="sizes">Tallas: S, M, L</p>
-                    <p class="price">$480.00 MXN</p>
-                </div>
+                <a href="pantalon-gris.html" class="product-link" data-sizes="S,M,L">
+                    <div class="product-card">
+                        <img src="images/pantalon2.jpg" alt="Pants Grises">
+                        <h3>Pants Deportivos Grises</h3>
+                        <p class="sizes">Tallas: S, M, L</p>
+                        <p class="price">$480.00 MXN</p>
+                    </div>
+                </a>
 
             </div>
         </section>
@@ -93,32 +99,33 @@
             <h2>Chamarras</h2>
             <div class="product-grid">
                 
-                <div class="product-card">
-                    <img src="images/chamarra1.jpg" alt="Chamarra de Mezclilla">
-                    <h3>Chamarra de Mezclilla</h3>
-                    <p class="sizes">Tallas: M, L</p>
-                    <p class="price">$850.00 MXN</p>
-                </div>
+                <a href="chamarra-mezclilla.html" class="product-link" data-sizes="M,L">
+                    <div class="product-card">
+                        <img src="images/chamarra1.jpg" alt="Chamarra de Mezclilla">
+                        <h3>Chamarra de Mezclilla</h3>
+                        <p class="sizes">Tallas: M, L</p>
+                        <p class="price">$850.00 MXN</p>
+                    </div>
+                </a>
 
-                </div>
+            </div>
         </section>
+        
          <section id="sueteres" class="category">
-            <h2>Sueteres</h2>
+            <h2>Suéteres</h2>
             <div class="product-grid">
-</a> <a href="sueter-nav.html" class="product-link" data-sizes="S">
+                <a href="sueter-nav.html" class="product-link" data-sizes="S">
                     <div class="product-card">
                         <img src="images/IMG_6078.JPEG" alt="Sueter Navideño">
-                        <h3>Sueter Navideño</h3>
+                        <h3>Suéter Navideño</h3>
                         <p class="sizes">Tallas: S</p>
                         <p class="price">$400.00 MXN</p>
                     </div>
                 </a> 
-
-<div class="product-grid">
-</a> <a href="sueter-verde.html" class="product-link "data-sizes="L">
+                <a href="sueter-verde.html" class="product-link" data-sizes="L">
                     <div class="product-card">
                         <img src="images/IMG_6083.JPEG" alt="Sueter Verde Tejido">
-                        <h3>Sueter Verde Tejido</h3>
+                        <h3>Suéter Verde Tejido</h3>
                         <p class="sizes">Tallas: L</p>
                         <p class="price">$450.00 MXN</p>
                     </div>
@@ -151,7 +158,6 @@
             navLinks.classList.remove('active');
         }
     </script>
-</body>
     <script>
         function filterProducts(clickedButton, selectedSize) {
             const productLinks = document.querySelectorAll('.product-link');
@@ -172,7 +178,7 @@
                 }
 
                 // 3. Verificar si la talla seleccionada está disponible
-                // Usamos .includes() para ver si la cadena de tallas contiene la talla seleccionada.
+                // La talla del producto (ej. "30,32,34") debe contener la talla buscada (ej. "30").
                 if (availableSizes.includes(selectedSize)) {
                     link.classList.remove('hidden'); // Mostrar
                 } else {
@@ -181,4 +187,5 @@
             });
         }
     </script>
+</body>
 </html>
