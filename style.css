@@ -1,15 +1,15 @@
 /* =================================
-   PALETA "VELOCIDAD Y PRESTIGIO"
+   PALETA "MOCHA & CLAY"
    ================================= */
 :root {
-  --color-primario: #1c1c1c;    /* Casi negro, mate y sofisticado */
-  --color-primario-hover: #000000;
-  --color-fondo: #ffffff;       /* Blanco puro para limpieza total */
-  --color-acento: #D90429;      /* Rojo intenso pero elegante (El botón de compra) */
-  --color-texto-principal: #2b2d42;
+  --color-primario: #3E2723;    /* Café muy oscuro (casi negro) */
+  --color-primario-hover: #4E342E;
+  --color-fondo: #FDFBF7;       /* Blanco hueso / Alabastro */
+  --color-acento: #D35400;      /* Naranja quemado / Arcilla (Invita a tocar) */
+  --color-texto-principal: #2C2C2C;
   --color-texto-claro: #ffffff;
-  --color-bordes: #edf2f4;
-  --color-fondo-tarjeta: #f8f9fa; /* Gris muy sutil para separar productos */
+  --color-bordes: #EAECEE;
+  --color-fondo-tarjeta: #ffffff;
 }
 
 /* =================================
