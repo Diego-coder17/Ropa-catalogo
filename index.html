@@ -21,7 +21,7 @@
 
 <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo">Mi Catálogo</div>
+            <a href="#" class="nav-logo" onclick="filterCategories('ALL')">Mi Catálogo</a>
 
             <button class="hamburger" id="hamburger-btn">
                 ☰
@@ -153,24 +153,40 @@
     <script>
         function filterCategories(selectedId) {
             const allCategories = document.querySelectorAll('.category');
+            const filterBar = document.querySelector('.filter-bar');
             
-            // Oculta todas las categorías primero
+            // 2. Lógica para "Mostrar Todo"
+            if (selectedId === 'ALL') {
+                allCategories.forEach(section => {
+                    section.style.display = 'block'; // Muestra todas las secciones
+                });
+                filterBar.style.display = 'block'; // Asegura que la barra de tallas se muestre
+                
+                // Reseteamos el filtro de tallas a "Mostrar Todo" y lo marcamos como activo
+                const allButton = document.querySelector('.filter-bar button[onclick*="\'ALL\'"]');
+                filterProducts(allButton, 'ALL');
+                return; // Terminamos aquí
+            }
+
+            // Lógica para una Categoría Específica
+            
+            // Oculta todas las categorías
             allCategories.forEach(section => {
                 section.style.display = 'none';
             });
             
+            // Muestra solo la categoría seleccionada
             if (selectedId) {
-                // Muestra solo la categoría seleccionada
                 const selectedSection = document.getElementById(selectedId);
                 if (selectedSection) {
                     selectedSection.style.display = 'block';
-                    // Nota: Si quieres un scroll suave a la categoría, puedes agregar:
-                    // selectedSection.scrollIntoView({ behavior: 'smooth' });
+                    selectedSection.scrollIntoView({ behavior: 'smooth' });
                 }
             }
             
-            // Si quieres que al cambiar de categoría, se mantenga el filtro de tallas aplicado,
-            // puedes llamar aquí a la función filterProducts('ALL') o dejar que el usuario lo aplique.
+            // Cuando se filtra una categoría, reseteamos el filtro de tallas
+            const allButton = document.querySelector('.filter-bar button[onclick*="\'ALL\'"]');
+            filterProducts(allButton, 'ALL');
         }
     </script>
     
@@ -181,7 +197,13 @@
 
             // 1. Manejar el estado activo del botón
             filterButtons.forEach(btn => btn.classList.remove('active'));
-            clickedButton.classList.add('active');
+            if(clickedButton) {
+                 clickedButton.classList.add('active');
+            } else {
+                 // Si no hay botón, activamos el de "Mostrar Todo" por defecto
+                 document.querySelector('.filter-bar button[onclick*="\'ALL\'"]').classList.add('active');
+            }
+
 
             // 2. Iterar sobre todos los productos
             productLinks.forEach(link => {
@@ -204,14 +226,8 @@
         
         // Ejecuta el filtro de categorías al cargar la página para mostrar todo por defecto
         document.addEventListener('DOMContentLoaded', () => {
-            // Ocultamos todas las categorías al inicio
-            const allCategories = document.querySelectorAll('.category');
-            allCategories.forEach(section => {
-                section.style.display = 'block';
-            });
-            
-            // Nota: Si quieres que solo se muestre la primera categoría al cargar, 
-            // cambia 'block' a 'none' y luego llama a filterCategories('abrigo');
+            // Aseguramos que todas las categorías estén visibles al inicio
+            filterCategories('ALL');
         });
     </script>
 </body>
