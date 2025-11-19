@@ -356,3 +356,9 @@ html {
     .hero h1 { font-size: 2em; }
     .hero p { font-size: 1.1em; }
 }
+@media (max-width: 768px) {
+    .hero {
+        /* ESTO ES FUNDAMENTAL para que el sistema operativo la cargue */
+        background-attachment: scroll; 
+    }
+}
