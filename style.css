@@ -1,17 +1,17 @@
 /* =================================
-   PALETA "TOSCANA DE LUJO"
+   PALETA "ESMERALDA MATTE"
    ================================= */
 :root {
-  --color-primario: #2b1d1a;    /* Café Espresso */
-  --color-primario-hover: #4a3b38;
-  --color-fondo: #D6CCC2;       /* FONDO PRINCIPAL: Beige Piedra (Cálido) */
-  --color-fondo-tarjeta: #FFFFFF; /* TARJETAS: Blancas para resaltar el producto */
+  --color-primario: #132a13;    /* Verde muy oscuro */
+  --color-primario-hover: #31572c;
+  --color-fondo: #354F52;       /* FONDO PRINCIPAL: Verde Pizarra (Grisáceo) */
+  --color-fondo-tarjeta: #52796F; /* TARJETAS: Verde Eucalipto */
   
-  --color-acento: #720E1E;      /* Rojo Vino / Burdeos (Muy elegante) */
+  --color-acento: #E09F3E;      /* Ámbar / Bronce brillante */
   
-  --color-texto-principal: #2b1d1a;
-  --color-texto-claro: #ffffff;
-  --color-bordes: #C7BCA5;
+  --color-texto-principal: #ffffff;
+  --color-texto-claro: #CAD2C5;
+  --color-bordes: #84a98c;
 }
 /* =================================
    ESTILOS GENERALES
