@@ -15,7 +15,7 @@
         <div class="hero-content">
             <h1>NUEVA COLECCIÓN 2025</h1>
             <p>Estilo y comodidad en cada prenda.</p>
-            <a href="#playeras" class="cta-button">Ver Catálogo</a>
+            <a href="#abrigo" class="cta-button">Ver Catálogo</a>
         </div>
     </header>
 
@@ -30,10 +30,9 @@
             <div class="nav-links" id="nav-links">
                 <button class="close-btn" id="close-btn">×</button>
                 
-                <a href="#playeras" onclick="closeMenu()">Playeras</a>
-                <a href="#pantalones" onclick="closeMenu()">Pantalones</a>
-                <a href="#chamarras" onclick="closeMenu()">Chamarras</a>
-                <a href="#sueteres" onclick="closeMenu()">Suéteres</a>
+                <a href="#abrigo" onclick="filterCategories('abrigo'); closeMenu();">Suéteres y Chamarras</a>
+                <a href="#superiores" onclick="filterCategories('superiores'); closeMenu();">Playeras y Camisas</a>
+                <a href="#inferiores" onclick="filterCategories('inferiores'); closeMenu();">Pantalones y Shorts</a>
             </div>
         </div>
     </nav>
@@ -43,62 +42,13 @@
         <button onclick="filterProducts(this, 'M')">Talla M</button>
         <button onclick="filterProducts(this, 'L')">Talla L</button>
         <button onclick="filterProducts(this, 'XL')">Talla XL</button>
-    </div>
+        </div>
     <main>
-        <section id="playeras" class="category">
-            <h2>Playeras</h2>
+        
+        <section id="abrigo" class="category">
+            <h2>Suéteres y Chamarras</h2>
             <div class="product-grid">
-                
-                <a href="playera-roja.html" class="product-link" data-sizes="S,M,L,XL">
-                    <div class="product-card">
-                        <img src="images/playera1.jpg" alt="Playera Roja">
-                        <h3>Playera Básica Roja</h3>
-                        <p class="sizes">Tallas: S, M, L, XL</p>
-                        <p class="price">$250.00 MXN</p>
-                    </div>
-                </a>
 
-                <a href="playera-negra.html" class="product-link" data-sizes="M,L">
-                    <div class="product-card">
-                        <img src="images/playera2.jpg" alt="Playera Estampada">
-                        <h3>Playera Estampada Negra</h3>
-                        <p class="sizes">Tallas: M, L</p>
-                        <p class="price">$300.00 MXN</p>
-                    </div>
-                </a>
-
-            </div>
-        </section>
-
-        <section id="pantalones" class="category">
-            <h2>Pantalones</h2>
-            <div class="product-grid">
-                
-                <a href="pantalon-azul.html" class="product-link" data-sizes="30,32,34">
-                    <div class="product-card">
-                        <img src="images/pantalon1.jpg" alt="Jeans Azules">
-                        <h3>Jeans Azules (Slim Fit)</h3>
-                        <p class="sizes">Tallas: 30, 32, 34</p>
-                        <p class="price">$550.00 MXN</p>
-                    </div>
-                </a>
-
-                <a href="pantalon-gris.html" class="product-link" data-sizes="S,M,L">
-                    <div class="product-card">
-                        <img src="images/pantalon2.jpg" alt="Pants Grises">
-                        <h3>Pants Deportivos Grises</h3>
-                        <p class="sizes">Tallas: S, M, L</p>
-                        <p class="price">$480.00 MXN</p>
-                    </div>
-                </a>
-
-            </div>
-        </section>
-
-        <section id="chamarras" class="category">
-            <h2>Chamarras</h2>
-            <div class="product-grid">
-                
                 <a href="chamarra-mezclilla.html" class="product-link" data-sizes="M,L">
                     <div class="product-card">
                         <img src="images/chamarra1.jpg" alt="Chamarra de Mezclilla">
@@ -107,13 +57,7 @@
                         <p class="price">$850.00 MXN</p>
                     </div>
                 </a>
-
-            </div>
-        </section>
-        
-         <section id="sueteres" class="category">
-            <h2>Suéteres</h2>
-            <div class="product-grid">
+                
                 <a href="sueter-nav.html" class="product-link" data-sizes="S">
                     <div class="product-card">
                         <img src="images/IMG_6078.JPEG" alt="Sueter Navideño">
@@ -130,7 +74,56 @@
                         <p class="price">$450.00 MXN</p>
                     </div>
                 </a> 
+
             </div>
+        </section>
+
+        <section id="superiores" class="category">
+            <h2>Playeras y Camisas</h2>
+            <div class="product-grid">
+                
+                <a href="playera-roja.html" class="product-link" data-sizes="S,M,L,XL">
+                    <div class="product-card">
+                        <img src="images/playera1.jpg" alt="Playera Roja">
+                        <h3>Playera Básica Roja</h3>
+                        <p class="sizes">Tallas: S, M, L, XL</p>
+                        <p class="price">$250.00 MXN</p>
+                    </div>
+                </a>
+                <a href="playera-negra.html" class="product-link" data-sizes="M,L">
+                    <div class="product-card">
+                        <img src="images/playera2.jpg" alt="Playera Estampada">
+                        <h3>Playera Estampada Negra</h3>
+                        <p class="sizes">Tallas: M, L</p>
+                        <p class="price">$300.00 MXN</p>
+                    </div>
+                </a>
+                
+                </div>
+        </section>
+
+        <section id="inferiores" class="category">
+            <h2>Pantalones y Shorts</h2>
+            <div class="product-grid">
+                
+                <a href="pantalon-azul.html" class="product-link" data-sizes="30,32,34">
+                    <div class="product-card">
+                        <img src="images/pantalon1.jpg" alt="Jeans Azules">
+                        <h3>Jeans Azules (Slim Fit)</h3>
+                        <p class="sizes">Tallas: 30, 32, 34</p>
+                        <p class="price">$550.00 MXN</p>
+                    </div>
+                </a>
+                <a href="pantalon-gris.html" class="product-link" data-sizes="S,M,L">
+                    <div class="product-card">
+                        <img src="images/pantalon2.jpg" alt="Pants Grises">
+                        <h3>Pants Deportivos Grises</h3>
+                        <p class="sizes">Tallas: S, M, L</p>
+                        <p class="price">$480.00 MXN</p>
+                    </div>
+                </a>
+                
+                </div>
         </section>
 
         </main>
@@ -139,25 +132,48 @@
         <p>© Catalogo 2025 </p>
     </footer>
 <script>
+        // SCRIPT DEL MENÚ DE HAMBURGUESA
         const hamburger = document.getElementById('hamburger-btn');
         const navLinks = document.getElementById('nav-links');
         const closeBtn = document.getElementById('close-btn');
 
-        // Abrir menú
         hamburger.addEventListener('click', () => {
             navLinks.classList.add('active');
         });
 
-        // Cerrar menú con la X
         closeBtn.addEventListener('click', () => {
             navLinks.classList.remove('active');
         });
 
-        // Cerrar menú al elegir una categoría
         function closeMenu() {
             navLinks.classList.remove('active');
         }
     </script>
+    
+    <script>
+        function filterCategories(selectedId) {
+            const allCategories = document.querySelectorAll('.category');
+            
+            // Oculta todas las categorías primero
+            allCategories.forEach(section => {
+                section.style.display = 'none';
+            });
+            
+            if (selectedId) {
+                // Muestra solo la categoría seleccionada
+                const selectedSection = document.getElementById(selectedId);
+                if (selectedSection) {
+                    selectedSection.style.display = 'block';
+                    // Nota: Si quieres un scroll suave a la categoría, puedes agregar:
+                    // selectedSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+            
+            // Si quieres que al cambiar de categoría, se mantenga el filtro de tallas aplicado,
+            // puedes llamar aquí a la función filterProducts('ALL') o dejar que el usuario lo aplique.
+        }
+    </script>
+    
     <script>
         function filterProducts(clickedButton, selectedSize) {
             const productLinks = document.querySelectorAll('.product-link');
@@ -178,7 +194,6 @@
                 }
 
                 // 3. Verificar si la talla seleccionada está disponible
-                // La talla del producto (ej. "30,32,34") debe contener la talla buscada (ej. "30").
                 if (availableSizes.includes(selectedSize)) {
                     link.classList.remove('hidden'); // Mostrar
                 } else {
@@ -186,6 +201,18 @@
                 }
             });
         }
+        
+        // Ejecuta el filtro de categorías al cargar la página para mostrar todo por defecto
+        document.addEventListener('DOMContentLoaded', () => {
+            // Ocultamos todas las categorías al inicio
+            const allCategories = document.querySelectorAll('.category');
+            allCategories.forEach(section => {
+                section.style.display = 'block';
+            });
+            
+            // Nota: Si quieres que solo se muestre la primera categoría al cargar, 
+            // cambia 'block' a 'none' y luego llama a filterCategories('abrigo');
+        });
     </script>
 </body>
 </html>
