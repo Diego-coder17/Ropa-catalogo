@@ -152,4 +152,33 @@
         }
     </script>
 </body>
+    <script>
+        function filterProducts(clickedButton, selectedSize) {
+            const productLinks = document.querySelectorAll('.product-link');
+            const filterButtons = document.querySelectorAll('.filter-bar button');
+
+            // 1. Manejar el estado activo del botón
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            clickedButton.classList.add('active');
+
+            // 2. Iterar sobre todos los productos
+            productLinks.forEach(link => {
+                const availableSizes = link.getAttribute('data-sizes');
+                
+                if (selectedSize === 'ALL' || !availableSizes) {
+                    // Si es "Todas las Tallas" o la prenda no tiene tallas definidas, la mostramos.
+                    link.classList.remove('hidden');
+                    return;
+                }
+
+                // 3. Verificar si la talla seleccionada está disponible
+                // Usamos .includes() para ver si la cadena de tallas contiene la talla seleccionada.
+                if (availableSizes.includes(selectedSize)) {
+                    link.classList.remove('hidden'); // Mostrar
+                } else {
+                    link.classList.add('hidden'); // Ocultar
+                }
+            });
+        }
+    </script>
 </html>
