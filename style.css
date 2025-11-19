@@ -1,17 +1,15 @@
 /* =================================
-   PALETA "ESMERALDA MATTE"
+   PALETA "MOCHA & CLAY"
    ================================= */
 :root {
-  --color-primario: #132a13;    /* Verde muy oscuro */
-  --color-primario-hover: #31572c;
-  --color-fondo: #E3DAC9;       /* FONDO PRINCIPAL: Verde Pizarra (Grisáceo) */
-  --color-fondo-tarjeta: #132a13; /* TARJETAS: Verde Eucalipto */
-  
-  --color-acento: #E09F3E;      /* Ámbar / Bronce brillante */
-  
-  --color-texto-principal: #ffffff;
-  --color-texto-claro: #000000;
-  --color-bordes: #84a98c;
+  --color-primario: #3E2723;    /* Café muy oscuro (casi negro) */
+  --color-primario-hover: #4E342E;
+  --color-fondo: #FDFBF7;       /* Blanco hueso / Alabastro */
+  --color-acento: #D35400;      /* Naranja quemado / Arcilla (Invita a tocar) */
+  --color-texto-principal: #2C2C2C;
+  --color-texto-claro: #ffffff;
+  --color-bordes: #EAECEE;
+  --color-fondo-tarjeta: #ffffff;
 }
 /* =================================
    ESTILOS GENERALES
