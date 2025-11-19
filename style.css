@@ -1,15 +1,15 @@
 /* =================================
-   PALETA DE COLORES "Agua y Acero"
+   PALETA "VELOCIDAD Y PRESTIGIO"
    ================================= */
 :root {
-  --color-primario: #1A1A1A;    /* Negro Intenso */
-  --color-primario-hover: #333333;
-  --color-fondo: #F5F5DC;       /* Crema muy suave */
-  --color-acento: #C0A23F;      /* Dorado (el más potente) */
-  --color-texto-principal: #1A1A1A;
+  --color-primario: #1c1c1c;    /* Casi negro, mate y sofisticado */
+  --color-primario-hover: #000000;
+  --color-fondo: #ffffff;       /* Blanco puro para limpieza total */
+  --color-acento: #D90429;      /* Rojo intenso pero elegante (El botón de compra) */
+  --color-texto-principal: #2b2d42;
   --color-texto-claro: #ffffff;
-  --color-bordes: #dddddd;
-  --color-fondo-tarjeta: #ffffff;
+  --color-bordes: #edf2f4;
+  --color-fondo-tarjeta: #f8f9fa; /* Gris muy sutil para separar productos */
 }
 
 /* =================================
