@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoodie Gris Letterman</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Hoodie Gris Letterman</h1>
+    </header>
+
+    <main>
+        <a href="index.html#sueteres" class="back-link">← Volver a abrigo</a>
+
+        <div class="product-detail-layout">
+            
+            <div class="product-gallery">
+                <div class="gallery-main-image">
+                    <img src="images/IMG_6130.JPEG" alt="Foto principal" id="main-image">
+                </div>
+                <div class="gallery-thumbnails">
+                    <img src="images/IMG_6130.JPEG" alt="Vista frente" class="thumbnail" onclick="changeImage('images/IMG_6130.JPEG')">
+                    <img src="images/IMG_6132.JPEG" alt="Vista lado" class="thumbnail" onclick="changeImage('images/IMG_6132.JPEG')">
+                    <img src="images/IMG_6131.JPEG" alt="Vista detalle" class="thumbnail" onclick="changeImage('images/IMG_6131.JPEG')">
+                    </div>
+            </div>
+
+            <div class="product-info">
+                <p class="price-detail">$400.00 MXN</p>
+                
+                <h3>Descripción</h3>
+                <p>Sudadera estilo béisbol con bolsillo canguro, acabados en rib y 
+                  gráficos bordados que le dan un carácter único y urbano</p>
+
+                <h3>Marca</h3>
+                <p>Intelligent Store</p>
+
+          
+                <h3>Tallas Disponibles</h3>
+                <p class="sizes-detail">L</p>
+                
+                <a href="https://wa.me/525643361487?text=Hola,%20me%20interesa%20comprar%20el%20Sueter%20Tejido%20Abstracto" 
+   class="buy-button" 
+   target="_blank">
+   Comprar por WhatsApp 💬
+</a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>© Catalogo 2025</p>
+    </footer>
+
+    <script>
+        function changeImage(newSrc) {
+            document.getElementById('main-image').src = newSrc;
+        }
+    </script>
+
+</body>
+</html>
