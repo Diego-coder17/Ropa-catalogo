@@ -408,3 +408,20 @@ html {
     transition: opacity 0.3s ease; /* Transición suave para el cambio */
     /* El display: block se maneja desde el JavaScript */
 }
+/* =================================
+   AJUSTE PARA GRID DE 2 COLUMNAS EN MÓVIL
+   ================================= */
+@media (max-width: 768px) {
+    
+    /* 1. Las tarjetas deben ajustarse al 50% del ancho del contenedor.
+       Usamos calc(50% - 10px) para restar la mitad del espacio (gap: 20px) 
+       y asegurar que las dos tarjetas y el espacio quepan perfectamente. */
+    .product-link {
+        width: calc(50% - 10px); 
+    }
+    
+    /* 2. La tarjeta de producto debe llenar todo el espacio que le dio su enlace */
+    .product-card {
+        width: 100%;
+    }
+}
