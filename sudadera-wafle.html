@@ -1,0 +1,50 @@
+
+        <div class="product-detail-layout">
+            
+            <div class="product-gallery">
+                <div class="gallery-main-image">
+                    <img src="images/IMG_6182.JPEG" alt="Foto principal" id="main-image">
+                </div>
+                <div class="gallery-thumbnails">
+                    <img src="images/IMG_6182.JPEG" alt="Vista frente" class="thumbnail" onclick="changeImage('images/IMG_6182.JPEG')">
+                    <img src="images/IMG_6184.JPEG" alt="Vista lado" class="thumbnail" onclick="changeImage('images/IMG_6184.JPEG')">
+                    <img src="images/IMG_6183.JPEG" alt="Vista detalle" class="thumbnail" onclick="changeImage('images/IMG_6183.JPEG')">
+                    </div>
+            </div>
+
+            <div class="product-info">
+                <p class="price-detail">$400.00 MXN</p>
+                
+                <h3>Descripción</h3>
+                <p>Chaleco estilo Biker con solapas y cierres metálicos, diseño asimétrico en piel sintética negra y corte
+                  amplio para añadir una dosis de actitud rockera a cualquier look</p>
+
+                <h3>Marca</h3>
+                <p>Intelligent Store</p>
+
+          
+                <h3>Tallas Disponibles</h3>
+                <p class="sizes-detail">M</p>
+                
+                <a href="https://wa.me/525643361487?text=Hola,%20me%20interesa%20comprar%20el%20Chaleco%20biker" 
+   class="buy-button" 
+   target="_blank">
+   Comprar por WhatsApp 💬
+</a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>© Catalogo 2025</p>
+    </footer>
+
+    <script>
+        function changeImage(newSrc) {
+            document.getElementById('main-image').src = newSrc;
+        }
+    </script>
+
+</body>
+</html>
