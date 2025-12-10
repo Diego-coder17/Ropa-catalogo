@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaleco Puffer Azul Marino</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Chaleco Puffer Azul Marino</h1>
+    </header>
+
+    <main>
+        <a href="index.html#abrigo" class="back-link">← Volver a abrigos</a>
+
+        <div class="product-detail-layout">
+            
+            <div class="product-gallery">
+                <div class="gallery-main-image">
+                    <img src="images/IMG_6278.JPEG" alt="Foto principal" id="main-image">
+                </div>
+                <div class="gallery-thumbnails">
+                    <img src="images/IMG_6278.JPEG" alt="Vista frente" class="thumbnail" onclick="changeImage('images/IMG_6278.JPEG')">
+                    <img src="images/IMG_6280.JPEG" alt="Vista espalda" class="thumbnail" onclick="changeImage('images/IMG_6280.JPEG')">
+                    <img src="images/IMG_6281.JPEG" alt="Vista etiqueta" class="thumbnail" onclick="changeImage('images/IMG_6281.JPEG')">
+                </div>
+            </div>
+
+            <div class="product-info">
+                <p class="price-detail">$350.00 MXN</p>
+                
+                <h3>Descripción</h3>
+                <p>Chaleco acolchado ligero en tono azul marino profundo, con cierre completo y cuello alto, ideal para un estilo casual y abrigador sin perder movilidad.</p>
+
+                <h3>Marca</h3>
+                <p>Piaza Italia</p>
+
+                <h3>Tallas Disponibles</h3>
+                <p class="sizes-detail">XL</p>
+                
+                <a href="https://wa.me/525643361487?text=Hola,%20me%20interesa%20comprar%20el%20Chaleco%20Azul" 
+                   class="buy-button" 
+                   target="_blank">
+                   Comprar por WhatsApp 💬
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>© Catalogo 2025</p>
+    </footer>
+
+    <script>
+        function changeImage(newSrc) {
+            document.getElementById('main-image').src = newSrc;
+        }
+    </script>
+
+</body>
+</html>
