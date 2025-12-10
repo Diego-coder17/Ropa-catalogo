@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaleco Puffer Ultra-Ligero</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Chaleco Puffer Ultra-Ligero</h1>
+    </header>
+
+    <main>
+        <a href="index.html#abrigo" class="back-link">← Volver a abrigos</a>
+
+        <div class="product-detail-layout">
+            
+            <div class="product-gallery">
+                <div class="gallery-main-image">
+                    <img src="images/IMG_6206.jpg" alt="Foto principal" id="main-image">
+                </div>
+                <div class="gallery-thumbnails">
+                    <img src="images/IMG_6206.jpg" alt="Vista frente" class="thumbnail" onclick="changeImage('images/IMG_6206.jpg')">
+                    <img src="images/IMG_6208.jpg" alt="Vista espalda" class="thumbnail" onclick="changeImage('images/IMG_6208.jpg')">
+                    <img src="images/IMG_6207.jpg" alt="Vista etiqueta" class="thumbnail" onclick="changeImage('images/IMG_6207.jpg')">
+                </div>
+            </div>
+
+            <div class="product-info">
+                <p class="price-detail">$350.00 MXN</p>
+                
+                <h3>Descripción</h3>
+                <p>Chaleco acolchado de cuello alto con diseño de líneas finas, relleno térmico ligero y corte entallado ideal para protegerte del frío con movilidad total.</p>
+
+                <h3>Marca</h3>
+                <p>Dont Call Me Jennifer</p>
+
+                <h3>Tallas Disponibles L</h3>
+                <p class="sizes-detail"></p>
+                
+                <a href="https://wa.me/525643361487?text=Hola,%20me%20interesa%20comprar%20el%20Chaleco%20Puffer%20Negro" 
+                   class="buy-button" 
+                   target="_blank">
+                   Comprar por WhatsApp 💬
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>© Catalogo 2025</p>
+    </footer>
+
+    <script>
+        function changeImage(newSrc) {
+            document.getElementById('main-image').src = newSrc;
+        }
+    </script>
+
+</body>
+</html>
