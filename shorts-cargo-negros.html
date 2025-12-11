@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shorts Cargo Utilitarios Negros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Shorts Cargo Utilitarios Negros</h1>
+    </header>
+
+    <main>
+        <a href="index.html#inferiores" class="back-link">← Volver a pantalones</a>
+
+        <div class="product-detail-layout">
+            
+            <div class="product-gallery">
+                <div class="gallery-main-image">
+                    <img src="images/IMG_6361.JPEG" alt="Foto principal" id="main-image">
+                </div>
+                <div class="gallery-thumbnails">
+                    <img src="images/IMG_6361.JPEG" alt="Vista frente" class="thumbnail" onclick="changeImage('images/IMG_6361.JPEG')">
+                    <img src="images/IMG_6363.JPEG" alt="Vista espalda" class="thumbnail" onclick="changeImage('images/IMG_6363.JPEG')">
+                    <img src="images/IMG_6362.JPEG" alt="Vista etiqueta" class="thumbnail" onclick="changeImage('images/IMG_6362.JPEG')">
+                </div>
+            </div>
+
+            <div class="product-info">
+                <p class="price-detail">$250.00 MXN</p>
+                
+                <h3>Descripción</h3>
+                <p>Bermudas tipo cargo en color negro con múltiples bolsillos funcionales y jareta ajustable en el ruedo, diseño utilitario resistente perfecto para el uso diario.</p>
+
+                <h3>Marca</h3>
+                <p>Reserved</p>
+
+                <h3>Tallas Disponibles</h3>
+                <p class="sizes-detail">L</p>
+                
+                <a href="https://wa.me/525643361487?text=Hola,%20me%20interesa%20comprar%20los%20Shorts%20Cargo" 
+                   class="buy-button" 
+                   target="_blank">
+                   Comprar por WhatsApp 💬
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>© Catalogo 2025</p>
+    </footer>
+
+    <script>
+        function changeImage(newSrc) {
+            document.getElementById('main-image').src = newSrc;
+        }
+    </script>
+
+</body>
+</html>
