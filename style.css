@@ -569,3 +569,17 @@ html {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
+/* Estilo especial para el botón de Asesoría en el menú */
+.nav-links a[href="#ayuda"] {
+    background-color: var(--color-acento);
+    color: #fff !important; /* Texto blanco */
+    border-radius: 20px;
+    padding: 8px 15px;
+    margin-top: 5px; /* Separación en móvil */
+}
+
+.nav-links a[href="#ayuda"]:hover {
+    background-color: #fff;
+    color: var(--color-acento) !important;
+    border: 1px solid var(--color-acento);
+}
