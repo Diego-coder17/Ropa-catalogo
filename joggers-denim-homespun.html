@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joggers Denim Homespun</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Joggers Denim "Homespun"</h1>
+    </header>
+
+    <main>
+        <a href="index.html#inferiores" class="back-link">← Volver a pantalones</a>
+
+        <div class="product-detail-layout">
+            
+            <div class="product-gallery">
+                <div class="gallery-main-image">
+                    <img src="images/IMG_6459.JPEG" alt="Foto principal" id="main-image">
+                </div>
+                <div class="gallery-thumbnails">
+                    <img src="images/IMG_6459.JPEG" alt="Vista frente" class="thumbnail" onclick="changeImage('images/IMG_6459.JPEG')">
+                    <img src="images/IMG_6462.JPEG" alt="Vista espalda" class="thumbnail" onclick="changeImage('images/IMG_6462.JPEG')">
+                    <img src="images/IMG_6460.JPEG" alt="Vista etiqueta" class="thumbnail" onclick="changeImage('images/IMG_6460.JPEG')">
+                </div>
+            </div>
+
+            <div class="product-info">
+                <p class="price-detail">$300.00 MXN</p>
+                
+                <h3>Descripción</h3>
+                <p>Pantalones tipo jogger confeccionados en mezclilla ligera y suave, con cintura elástica, cordón ajustable y puños en los tobillos, fusionando el look del denim con la comodidad deportiva.</p>
+
+                <h3>Marca</h3>
+                <p>Piaza Italia</p>
+
+                <h3>Tallas Disponibles</h3>
+                <p class="sizes-detail">XL</p>
+                
+                <a href="https://wa.me/525643361487?text=Hola,%20me%20interesa%20comprar%20los%20Joggers%20Denim" 
+                   class="buy-button" 
+                   target="_blank">
+                   Comprar por WhatsApp 💬
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>© Catalogo 2025</p>
+    </footer>
+
+    <script>
+        function changeImage(newSrc) {
+            document.getElementById('main-image').src = newSrc;
+        }
+    </script>
+
+</body>
+</html>
