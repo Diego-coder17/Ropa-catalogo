@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playera Gráfica Palm Shadow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Playera Gráfica "Palm Shadow"</h1>
+    </header>
+
+    <main>
+        <a href="index.html#superiores" class="back-link">← Volver a playeras</a>
+
+        <div class="product-detail-layout">
+            
+            <div class="product-gallery">
+                <div class="gallery-main-image">
+                    <img src="images/IMG_6431.JPEG" alt="Foto principal" id="main-image">
+                </div>
+                <div class="gallery-thumbnails">
+                    <img src="images/IMG_6431.JPEG" alt="Vista frente" class="thumbnail" onclick="changeImage('images/IMG_6431.JPEG')">
+                    <img src="images/IMG_6433.JPEG" alt="Vista espalda" class="thumbnail" onclick="changeImage('images/IMG_6433.JPEG')">
+                    <img src="images/IMG_6432.JPEG" alt="Vista etiqueta" class="thumbnail" onclick="changeImage('images/IMG_6432.JPEG')">
+                </div>
+            </div>
+
+            <div class="product-info">
+                <p class="price-detail">$200.00 MXN</p>
+                
+                <h3>Descripción</h3>
+                <p>Playera de algodón suave en tono verde olivo, con estampado artístico de sombras de palmeras en el pecho, ofreciendo un estilo relajado y tropical con un toque urbano.</p>
+
+                <h3>Marca</h3>
+                <p>Express</p>
+
+                <h3>Tallas Disponibles</h3>
+                <p class="sizes-detail">L</p>
+                
+                <a href="https://wa.me/525643361487?text=Hola,%20me%20interesa%20comprar%20la%20Playera%20Palm" 
+                   class="buy-button" 
+                   target="_blank">
+                   Comprar por WhatsApp 💬
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>© Catalogo 2025</p>
+    </footer>
+
+    <script>
+        function changeImage(newSrc) {
+            document.getElementById('main-image').src = newSrc;
+        }
+    </script>
+
+</body>
+</html>
