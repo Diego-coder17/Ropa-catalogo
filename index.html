@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviso Importante - Catalogo 2025</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* Estilos exclusivos para esta página de bloqueo */
+        .intro-body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--color-primario);
+            /* Asegúrate de que la ruta de la imagen sea correcta */
+            background-image: linear-gradient(rgba(19, 42, 19, 0.9), rgba(19, 42, 19, 0.95)), url('images/portada.jpg');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .intro-card {
+            background-color: var(--color-fondo);
+            padding: 40px;
+            max-width: 550px;
+            width: 85%;
+            text-align: center;
+            border-radius: 15px;
+            border: 1px solid var(--color-acento);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.7);
+        }
+
+        .intro-card h1 {
+            color: var(--color-primario);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2em;
+            margin-top: 0;
+            text-transform: uppercase;
+            border-bottom: 2px solid var(--color-acento);
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+
+        .intro-card p {
+            color: #333;
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        /* Estilos del Checkbox (La llave para avanzar) */
+        .confirmation-box {
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-weight: bold;
+            color: var(--color-primario);
+            cursor: pointer;
+        }
+        
+        .confirmation-box input {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            accent-color: var(--color-acento); /* Pinta el checkbox del color de tu marca */
+        }
+
+        /* Estilos del botón bloqueado y activo */
+        .enter-btn {
+            display: inline-block;
+            padding: 15px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: 'Montserrat', sans-serif;
+            transition: all 0.3s ease;
+            
+            /* Estado Inicial: Bloqueado (Gris) */
+            background-color: #ccc; 
+            color: #666;
+            pointer-events: none; /* Esto impide que le den click */
+            cursor: not-allowed;
+        }
+
+        /* Estado Activo (Cuando marcan el checkbox) */
+        .enter-btn.active {
+            background-color: var(--color-acento);
+            color: white;
+            pointer-events: auto; /* Permite el click */
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(230, 146, 68, 0.4);
+        }
+
+        .enter-btn.active:hover {
+            transform: scale(1.05);
+            background-color: var(--color-primario-hover);
+        }
+    </style>
+</head>
+<body class="intro-body">
+
+    <div class="intro-card">
+        <h1>Aviso Importante</h1>
+        
+        <p>
+            Estimado cliente, antes de ingresar a nuestro catálogo, es importante que conozcas nuestras políticas de compra y tiempos de entrega.
+            <br><br>
+            [Aquí pondrás el texto que pensarás después. Por ahora, este aviso bloquea el acceso hasta que el usuario confirme su lectura].
+        </p>
+
+        <div class="confirmation-box" onclick="toggleCheckbox()">
+            <input type="checkbox" id="accept-check" onclick="event.stopPropagation()">
+            <label for="accept-check">He leído y acepto las condiciones</label>
+        </div>
+
+        <a href="catalogo.html" id="btn-enter" class="enter-btn">Entrar al Catálogo</a>
+    </div>
+
+    <script>
+        // Script simple para desbloquear el botón
+        const checkbox = document.getElementById('accept-check');
+        const btn = document.getElementById('btn-enter');
+
+        // Escuchar cambios en el checkbox
+        checkbox.addEventListener('change', function() {
+            if(this.checked) {
+                btn.classList.add('active'); // Activa el color y el click
+                btn.textContent = "Entrar a la Tienda";
+            } else {
+                btn.classList.remove('active'); // Lo vuelve a bloquear
+                btn.textContent = "Entrar al Catálogo";
+            }
+        });
+
+        // Permitir click en el texto del label también
+        function toggleCheckbox() {
+            checkbox.checked = !checkbox.checked;
+            // Disparar el evento manualmente
+            checkbox.dispatchEvent(new Event('change'));
+        }
+    </script>
+
+</body>
+</html>
