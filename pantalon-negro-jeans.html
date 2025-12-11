@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantalón Negro Corte Jeans</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Pantalón Negro Corte Jeans</h1>
+    </header>
+
+    <main>
+        <a href="index.html#inferiores" class="back-link">← Volver a pantalones</a>
+
+        <div class="product-detail-layout">
+            
+            <div class="product-gallery">
+                <div class="gallery-main-image">
+                    <img src="images/IMG_6478.jpg" alt="Foto principal" id="main-image">
+                </div>
+                <div class="gallery-thumbnails">
+                    <img src="images/IMG_6478.jpg" alt="Vista frente" class="thumbnail" onclick="changeImage('images/IMG_6478.jpg')">
+                    <img src="images/IMG_6480.jpg" alt="Vista espalda" class="thumbnail" onclick="changeImage('images/IMG_6480.jpg')">
+                    <img src="images/IMG_6479.jpg" alt="Vista detalle" class="thumbnail" onclick="changeImage('images/IMG_6479.jpg')">
+                </div>
+            </div>
+
+            <div class="product-info">
+                <p class="price-detail">$350.00 MXN</p>
+                
+                <h3>Descripción</h3>
+                <p>Pantalón negro Regular Fit confeccionado en gabardina resistente. Presenta un diseño clásico de 5 bolsillos (estilo jeans) con bolsillos curvos al frente y de parche en la parte trasera. Un básico esencial para cualquier guardarropa.</p>
+
+                <h3>Marca</h3>
+                <p>IntelliGent Store</p>
+
+                <h3>Tallas Disponibles</h3>
+                <p class="sizes-detail">M</p>
+                
+                <a href="https://wa.me/525643361487?text=Hola,%20me%20interesa%20comprar%20el%20Pantalon%20Negro%20Jeans" 
+                   class="buy-button" 
+                   target="_blank">
+                   Comprar por WhatsApp 💬
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>© Catalogo 2025</p>
+    </footer>
+
+    <script>
+        function changeImage(newSrc) {
+            document.getElementById('main-image').src = newSrc;
+        }
+    </script>
+
+</body>
+</html>
