@@ -519,3 +519,53 @@ html {
         font-size: 1em;
     }
 }
+/* =================================
+   PÁGINA DE BIENVENIDA / AVISO
+   ================================= */
+/* Clase específica para el body de la intro */
+.intro-body {
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Fondo oscuro con tu imagen de portada de fondo tenue */
+    background-color: var(--color-primario);
+    background-image: linear-gradient(rgba(19, 42, 19, 0.85), rgba(19, 42, 19, 0.9)), url('images/portada.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
+
+.intro-card {
+    background-color: var(--color-fondo); /* Color crema de tu marca */
+    padding: 50px 40px;
+    max-width: 600px;
+    width: 90%; /* Para que no se salga en celulares */
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid var(--color-acento); /* Borde fino color bronce */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.5); /* Sombra profunda */
+    animation: fadeIn 1s ease-in-out; /* Animación de entrada suave */
+}
+
+.intro-card h1 {
+    color: var(--color-primario);
+    font-size: 2.2em;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.intro-card p {
+    color: #333;
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+/* Animación simple */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
