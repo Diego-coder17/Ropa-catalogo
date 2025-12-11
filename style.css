@@ -425,3 +425,35 @@ html {
         width: 100%;
     }
 }
+/* Estilos para la barra de filtros mejorada */
+.filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Estilo del dropdown de precios */
+#priceSelect {
+    background-color: var(--color-fondo);
+    color: var(--color-primario);
+    border: 1px solid var(--color-bordes);
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9em;
+    cursor: pointer;
+    outline: none;
+}
+
+#priceSelect:hover {
+    border-color: var(--color-acento);
+}
+
+/* Ajuste para móviles: que se apilen verticalmente si no caben */
+@media (max-width: 768px) {
+    .filter-bar {
+        flex-direction: column;
+    }
+}
