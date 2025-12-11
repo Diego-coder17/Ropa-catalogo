@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobrecamisa Jacquard Floral</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Sobrecamisa Jacquard Floral</h1>
+    </header>
+
+    <main>
+        <a href="index.html#superiores" class="back-link">← Volver a playeras</a>
+
+        <div class="product-detail-layout">
+            
+            <div class="product-gallery">
+                <div class="gallery-main-image">
+                    <img src="images/IMG_6482.JPEG" alt="Foto principal" id="main-image">
+                </div>
+                <div class="gallery-thumbnails">
+                    <img src="images/IMG_6482.JPEG" alt="Vista frente" class="thumbnail" onclick="changeImage('images/IMG_6482.JPEG')">
+                    <img src="images/IMG_6484.JPEG" alt="Vista espalda" class="thumbnail" onclick="changeImage('images/IMG_6484.JPEG')">
+                    <img src="images/IMG_6483.JPEG" alt="Vista etiqueta" class="thumbnail" onclick="changeImage('images/IMG_6483.JPEG')">
+                </div>
+            </div>
+
+            <div class="product-info">
+                <p class="price-detail">$250.00 MXN</p>
+                
+                <h3>Descripción</h3>
+                <p>Sobrecamisa color crema con impresionante textura jacquard de relieve floral, botones a tono y bolsillos de parche; una pieza de declaración (statement piece) que eleva cualquier outfit básico.</p>
+
+                <h3>Marca</h3>
+                <p>Reserved</p>
+
+                <h3>Tallas Disponibles</h3>
+                <p class="sizes-detail">M, XL</p>
+                
+                <a href="https://wa.me/525643361487?text=Hola,%20me%20interesa%20comprar%20la%20Sobrecamisa%20Floral" 
+                   class="buy-button" 
+                   target="_blank">
+                   Comprar por WhatsApp 💬
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>© Catalogo 2025</p>
+    </footer>
+
+    <script>
+        function changeImage(newSrc) {
+            document.getElementById('main-image').src = newSrc;
+        }
+    </script>
+
+</body>
+</html>
