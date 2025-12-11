@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeans Athletic Fit Lavado Claro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Jeans "Athletic Fit" Lavado Claro</h1>
+    </header>
+
+    <main>
+        <a href="index.html#inferiores" class="back-link">← Volver a pantalones</a>
+
+        <div class="product-detail-layout">
+            
+            <div class="product-gallery">
+                <div class="gallery-main-image">
+                    <img src="images/IMG_6353.JPEG" alt="Foto principal" id="main-image">
+                </div>
+                <div class="gallery-thumbnails">
+                    <img src="images/IMG_6353.JPEG" alt="Vista frente" class="thumbnail" onclick="changeImage('images/IMG_6353.JPEG')">
+                    <img src="images/IMG_6354.JPEG" alt="Vista espalda" class="thumbnail" onclick="changeImage('images/IMG_6354.JPEG')">
+                    <img src="images/IMG_6355.JPEG" alt="Vista etiqueta" class="thumbnail" onclick="changeImage('images/IMG_6355.JPEG')">
+                </div>
+            </div>
+
+            <div class="product-info">
+                <p class="price-detail">$350.00 MXN</p>
+                
+                <h3>Descripción</h3>
+                <p>Pantalones de mezclilla en lavado claro con corte "Athletic Fit" (más espacio en muslos y cadera), ofreciendo máxima libertad de movimiento con un estilo denim clásico.</p>
+
+                <h3>Marca</h3>
+                <p>Denizen de Levis</p>
+
+                <h3>Tallas Disponibles</h3>
+                <p class="sizes-detail">34/32</p>
+                
+                <a href="https://wa.me/525643361487?text=Hola,%20me%20interesa%20comprar%20los%20Jeans%20Athletic" 
+                   class="buy-button" 
+                   target="_blank">
+                   Comprar por WhatsApp 💬
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>© Catalogo 2025</p>
+    </footer>
+
+    <script>
+        function changeImage(newSrc) {
+            document.getElementById('main-image').src = newSrc;
+        }
+    </script>
+
+</body>
+</html>
