@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogger Negro Urbano</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Jogger Negro Urbano</h1>
+    </header>
+
+    <main>
+        <a href="index.html#inferiores" class="back-link">← Volver a pantalones</a>
+
+        <div class="product-detail-layout">
+            
+            <div class="product-gallery">
+                <div class="gallery-main-image">
+                    <img src="images/IMG_6474.jpg" alt="Foto principal" id="main-image">
+                </div>
+                <div class="gallery-thumbnails">
+                    <img src="images/IMG_6474.jpg" alt="Vista frente" class="thumbnail" onclick="changeImage('images/IMG_6474.jpg')">
+                    <img src="images/IMG_6476.jpg" alt="Vista espalda" class="thumbnail" onclick="changeImage('images/IMG_6476.jpg')">
+                    <img src="images/IMG_6475.jpg" alt="Vista detalle" class="thumbnail" onclick="changeImage('images/IMG_6475.jpg')">
+                </div>
+            </div>
+
+            <div class="product-info">
+                <p class="price-detail">$300.00 MXN</p>
+                
+                <h3>Descripción</h3>
+                <p>Pantalón tipo Jogger en color negro con cintura elástica y cordones ajustables multicolor. Cuenta con puños elásticos en los tobillos, un bolsillo trasero tipo parche y una pequeña etiqueta decorativa lateral. Estilo cómodo y moderno.</p>
+
+                <h3>Marca</h3>
+                <p>Piaza Italia</p>
+
+                <h3>Tallas Disponibles</h3>
+                <p class="sizes-detail">S</p>
+                
+                <a href="https://wa.me/525643361487?text=Hola,%20me%20interesa%20comprar%20el%20Jogger%20Negro" 
+                   class="buy-button" 
+                   target="_blank">
+                   Comprar por WhatsApp 💬
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>© Catalogo 2025</p>
+    </footer>
+
+    <script>
+        function changeImage(newSrc) {
+            document.getElementById('main-image').src = newSrc;
+        }
+    </script>
+
+</body>
+</html>
