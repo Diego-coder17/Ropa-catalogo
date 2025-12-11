@@ -43,6 +43,15 @@
         <button onclick="filterProducts(this, 'L')">Talla L</button>
         <button onclick="filterProducts(this, 'XL')">Talla XL</button>
         </div>
+    <div class="price-filter">
+        <select id="priceSelect" onchange="setFilter('price', this.value)">
+            <option value="all">Cualquier Precio</option>
+            <option value="0-300">Hasta $300</option>
+            <option value="301-500">$301 - $500</option>
+            <option value="501-1000">Más de $500</option>
+        </select>
+    </div>
+</div>
     <main>
         
         <section id="abrigo" class="category">
