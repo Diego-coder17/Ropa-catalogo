@@ -107,23 +107,24 @@
 </head>
 <body class="intro-body">
 
-    <div class="intro-card">
-        <h1>Aviso Importante</h1>
-        
-        <p>
-            Estimado cliente, antes de ingresar a nuestro catálogo, es importante que conozcas nuestras políticas de compra y tiempos de entrega.
-            <br><br>
-            [Aquí pondrás el texto que pensarás después. Por ahora, este aviso bloquea el acceso hasta que el usuario confirme su lectura].
-        </p>
+<div class="intro-card">
+    <h1>Aviso Importante</h1>
+    
+    <p style="text-align: justify;">
+        Queremos informarte que la mayoría de nuestras prendas son <strong>piezas únicas</strong>, por lo que el stock generalmente es de una sola pieza por modelo.
+        <br><br>
+        Te recomendamos preguntar por la disponibilidad y resolver cualquier duda sobre las prendas antes de realizar tu compra.
+        <br><br>
+        <em>Ten en cuenta que la página recibe actualizaciones constantes debido a las ventas y a los nuevos añadidos que van llegando.</em>
+    </p>
 
-        <div class="confirmation-box" onclick="toggleCheckbox()">
-            <input type="checkbox" id="accept-check" onclick="event.stopPropagation()">
-            <label for="accept-check">He leído y acepto las condiciones</label>
-        </div>
-
-        <a href="catalogo.html" id="btn-enter" class="enter-btn">Entrar al Catálogo</a>
+    <div class="confirmation-box" onclick="toggleCheckbox()">
+        <input type="checkbox" id="accept-check" onclick="event.stopPropagation()">
+        <label for="accept-check">He leído y acepto</label>
     </div>
 
+    <a href="catalogo.html" id="btn-enter" class="enter-btn">Entrar al Catálogo</a>
+</div>
     <script>
         // Script simple para desbloquear el botón
         const checkbox = document.getElementById('accept-check');
